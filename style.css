@@ -1,0 +1,215 @@
+.body{
+	margin: 0;
+	background: #ffcfce;
+}
+.header{
+	width: 100%;
+	height: 50px;
+	background: #fe6637;
+	display:  flex;
+	justify-content: space-around;
+}
+.header > span{
+	color: white;
+	font-size: 35px;
+	margin-top: 5px;
+}
+.app{
+	padding-top: 10px;
+	min-width: 100%;
+	display: flex;
+}
+.info-table{
+	padding: 10px;
+	margin-left:  20px;
+	align-self: flex-start;
+	border: 1px solid black;
+}
+.size-info{
+	display:  flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.paint-info{
+	display:  flex;
+	flex-direction: row;
+	margin-top: 15px;
+}
+.labels{
+	width: 120px;
+	display: flex;
+	flex-direction: column;
+	color: #fe6637;
+	font-size: 21px;
+}
+.labels > label {
+	height: 21px;
+	margin-top: 8px;
+}
+.inputs{
+	margin-left:  5px;
+	display: flex;
+	flex-direction: column;
+
+}
+.inputs > input {
+	width: 50px;
+	height: 15px;
+	margin-top: 8px;
+	color: #fe6637;
+	border: 2px solid #fe6637;
+	border-radius: 5px;
+	text-align: center;
+	box-shadow: inset 2px 2px 4px rgba(154, 147, 140, 0.5);
+}
+.erase {
+	margin-left:  5px;
+	margin-top: 15px;
+	display: flex;
+	flex-direction: row;
+}
+.erase > input {
+	margin-top: 8px;
+	height: 20px;
+ 	width: 20px;
+ 	margin-left: 19px;
+}
+.erase > label {
+	margin-top: 8px;
+	height: 21px;
+	width: 120px;
+	color: #fe6637;
+	font-size: 21px;
+}
+.button{
+	background: white;
+	text-decoration: none;
+	display: inline-block;
+	padding: 10px 30px;
+	margin: 10px 20px;
+	position: relative;
+	overflow: hidden;
+	border: 2px solid #fe6637;
+	border-radius: 8px;
+	font-family: 'Montserrat', sans-serif;
+	color: #fe6637;
+	transition: .2s ease-in-out;
+}
+.button:before {
+content: "";
+	background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	top: -8px;
+	left: -75px;
+	transform: skewX(-45deg);
+}
+.button:hover {
+	background: #fe6637;
+	color: #fff;
+}
+.button:hover:before {
+	left: 150px;
+	transition: .5s ease-in-out;
+}
+.playground{
+	margin-left: 10px;
+	padding:  10px;
+	background: white;
+	display:  flex;
+	flex-direction: column;
+	border: 1px solid black;
+}
+.line{
+	display:  flex;
+}
+.pixel-inside{
+	background-color: white;
+	width: 30px;
+	height: 30px;
+	
+}
+.color-animation {
+	animation-name: to-red, to-orange, to-yellow, to-green, to-lightblue, to-blue, to-purple;
+	animation-fill-mode: both;
+	/*animation-duration: 0.5s, 0.5s, 0.5s, 0.5s, 0.5s, 0.5s, 0.5s;
+	animation-delay: 0s, 0.5s, 1s, 1.5s, 2s, 2.5s, 3s;*/
+}
+.pixel-inside:hover{
+	opacity:  75%;
+}
+.pixel-shell{
+	background: black;
+	padding:  1px;
+}
+.color-label{
+	width: 100px;
+	display: flex;
+	justify-content: space-around;
+}
+.color-field{
+	width: 21px;
+	height: 21px;
+	border: 1px solid black;
+}
+
+
+
+@keyframes to-red{
+	99% {
+		background: white;
+	}
+	to {
+		background: red;
+	}
+}
+@keyframes to-orange{
+	99% {
+		background: red;
+	}
+	to {
+		background: orange;
+	}
+}
+@keyframes to-yellow{
+	99% {
+		background: orange;
+	}
+	to {
+		background: yellow;
+	}
+}
+@keyframes to-green{
+	99% {
+		background: yellow;
+	}
+	to {
+		background: green;
+	}
+}
+@keyframes to-lightblue{
+	99% {
+		background: green;
+	}
+	to {
+		background: lightblue;
+	}
+}
+@keyframes to-blue{
+	99% {
+		background: lightblue;
+	}
+	to {
+		background: blue;
+	}
+}
+@keyframes to-purple{
+	99% {
+		background: blue;
+	}
+	to {
+		background: purple;
+	}
+}

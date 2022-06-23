@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="body">
+    <div class="header">
+        <span> Pixel Art School </span>
+    </div>
+    <div class="app">
+        <div class="info-table">
+            
+            <div class="size-info">
+                <div class="labels">
+                    <label for="height">Высота:</label>
+                    <label for="width">Ширина:</label>
+                </div>
+                 
+                <div class="inputs">
+                    <input id="height" value="12">
+                    <input id="width" value="20">
+                </div> 
+                <button onclick="javascript:UpdatePlayground()" class="button">Обновить</button>
+            </div> 
+            <div class="paint-info">
+                <div class="labels">
+                    <label for="red" class="color-label">
+                        <div class="color-field" style="background: white;"></div>
+                        <span> => </span>
+                        <div class="color-field" style="background: red;"></div>
+                    </label>
+                    <label for="orange" class="color-label">
+                        <div class="color-field" style="background: red;"></div>
+                        <span> => </span>
+                        <div class="color-field" style="background: orange;"></div>
+                    </label>
+                    <label for="yellow" class="color-label">
+                        <div class="color-field" style="background: orange;"></div>
+                        <span> => </span>
+                        <div class="color-field" style="background: yellow;"></div>
+                    </label>
+                    <label for="green" class="color-label">
+                        <div class="color-field" style="background: yellow;"></div>
+                        <span> => </span>
+                        <div class="color-field" style="background: green;"></div>
+                    </label>
+                    <label for="light_blue" class="color-label">
+                        <div class="color-field" style="background: green;"></div>
+                        <span> => </span>
+                        <div class="color-field" style="background: lightblue;"></div>
+                    </label>
+                    <label for="blue" class="color-label">
+                        <div class="color-field" style="background: lightblue;"></div>
+                        <span> => </span>
+                        <div class="color-field" style="background: blue;"></div>
+                    </label>
+                    <label for="purple" class="color-label">
+                        <div class="color-field" style="background: blue;"></div>
+                        <span> => </span>
+                        <div class="color-field" style="background: purple;"></div>
+                    </label>                   
+                </div>
+                <div class="inputs">
+                    <input id="red" value="0.5">            
+                    <input id="orange" value="0.5">            
+                    <input id="yellow" value="0.5">
+                    <input id="green" value="0.5">            
+                    <input id="light_blue" value="0.5">            
+                    <input id="blue" value="0.5">            
+                    <input id="purple" value="0.5">                  
+                </div> 
+            </div>
+            <div class="erase"> 
+                <label for="erase">Ластик:</label>
+                <input id="erase" type="checkbox" class="erase-checkbox">  
+            </div>        
+        </div> 
+        <div id="playground" class="playground">
+
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="scripts.js" type="text/javascript"></script>
